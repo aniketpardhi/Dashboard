@@ -9,21 +9,19 @@ import { productInputs, userInputs } from "./Components/Formsource";
 import "./Style/Style.scss"
 import { useContext, useState } from "react";
 import { DarkModeContext } from "./Pages/Context/DarkModeContext";
-import UnplashGallry from "./Components/API/UnplashGallry";
-import Form from "./Components/API/Form/Form";
-import Calculator from "./Components/Calculator/Calculator";
+
 
 function App() {
-  const [submittedData, setSubmittedData] = useState(null);
+  // const [submittedData, setSubmittedData] = useState(null);
 
-  const handleFormSubmit = (formData) => {
-    setSubmittedData(formData);
-  };
+  // const handleFormSubmit = (formData) => {
+  //   setSubmittedData(formData);
+  // };
 //   document.title = "DashBoard";
-//  const{darkMode}=useContext(DarkModeContext);
+ const{darkMode}=useContext(DarkModeContext);
   return (
     <>
-     {/* <div className= {darkMode ? "app dark":"app"}>
+     <div className= {darkMode ? "app dark":"app"}>
      <BrowserRouter>
      
         <Routes>
@@ -51,8 +49,8 @@ function App() {
         </Routes>
        
       </BrowserRouter>
-     </div> */}
-      {/* <Form onSubmit={handleFormSubmit} />
+     </div>
+       {/* <Form onSubmit={handleFormSubmit} />
       {submittedData && (
         <div>
           <h2>Submitted Data:</h2>
@@ -61,9 +59,9 @@ function App() {
           <p>Email: {submittedData.email}</p>
           <p>Password: {submittedData.password}</p>
         </div>
-      )} */}
+      )}  */}
 
-      {/* <Calculator/> */}
+    
     </>
   );
 }
